@@ -1,0 +1,63 @@
+
+ 	
+Riverbed Support
+ 
+ 
+ 	
+ 
+Dear Riverbed Customer,
+
+Thank you for your interest in evaluating Riverbed Virtual Steelhead: VCX-070-E.
+
+Your new Customer Key is: BEXXW-WACWA-AUVWV
+
+The following Support IDs and license keys were generated for your Customer Key: BEXXW-WACWA-AUVWV
+
+Support ID: CDC-CGUGMBCWHM
+Features Keys:
+DAABA-AHB6Q-AAAMR-AC2FQ-AACGU-GMBCW-HMAAA-5I7VS-5QVNU
+DAABE-AEBBV-SG4MR-AC2FQ-AACGU-GMBCW-HMAAA-W3SJC-BZTQJ
+License duration: May 24, 2021 - Aug 22, 2021
+
+
+You can use your Support ID when contacting Riverbed Support. The Support ID(s) are also available on the Help page of your Virtual SteelHead.
+
+There are a few more steps you'll need to complete before you're licensed and ready to optimize!
+
+ 
+Please click on the link below to download and install your Virtual SteelHead on a supported hypervisor.
+The Virtual Steelhead (VCX) code is located here. The Virtual Steelhead (Hyper-V) code is located here.
+Install your customer key, and feature keys via the UI or CLI following the instructions below.
+UI Installation
+
+Browse to the License page under "Administration > Maintenance > Licenses".
+Copy and paste your Customer Key, BEXXW-WACWA-AUVWV, in the "Customer Key" field on the License page.
+Copy and paste the above Feature Keys into the License page(s) on each of your Virtual SteelHeads.
+CLI Installation
+
+To install the customer key, BEXXW-WACWA-AUVWV, in the CLI execute the following:
+amnesiac> enable amnesiac
+amnesiac # config t
+amnesiac(config) # license clmf customer-key
+BEXXW-WACWA-AUVWV
+
+To Install the Feature keys, in the CLI execute the following for each license key:
+amnesiac(config) # license clmf install <Feature Key>
+
+CLI Auto-License
+
+To set appliance specification:
+license clmf feature add <vcx-model>
+
+To call the licenses from the riverbed license server for the VCX instance:
+license clmf refresh 
+
+Please also note that some Virtual SteelHead upgrade options require changes to the virtual hardware settings before the new license is activated. For instructions or further information please refer to the latest Virtual SteelHead Installation Guide at https://support.riverbed.com/docs/appliance.htm.
+
+Please let us know if you have any problems with your installation!
+
+ 
+
+ 
+Regards,
+Riverbed Support
